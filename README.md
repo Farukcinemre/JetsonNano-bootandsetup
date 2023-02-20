@@ -173,7 +173,8 @@ dosyasına girdiğimizde yolov5’i çalıştırmak için hangi kütüphanelerin
 Normalde SDK Manager’dan SDK Components bölümünü install ettiyseniz opencv yüklemenize gerek yoktur ancak yüklemediyseniz bu durumda internetten yüklemeniz gerekir.
 
 **1.Adım: OPENCV yükleme**
-**Not:**Eğer opencv’yi nvidia SDK Manager’dan Jetson Nano’ya yükleme yapmışsanız bu adımı atlayabilirsiniz.
+
+**Not:** Eğer opencv’yi nvidia SDK Manager’dan Jetson Nano’ya yükleme yapmışsanız bu adımı atlayabilirsiniz.
 
 Opencv dosyalarını kopyalıyoruz
 
@@ -192,6 +193,7 @@ Terminal açıp buildOPENCV dosyasına giriyoruz.
 Sonra aşağıdaki komutu çalıştırarak opencv’yi yüklüyoruz. 
 
      $ ./buildOPENCV 
+
 **2.Adım:Diğer kütüphaneleri yükleme**
 
 masaüstüne terminal açıp python3-pip dosyasını yüklüyoruz.
@@ -424,9 +426,14 @@ Biz Teknofest Tarımsal İnsansız Aracı CORE takımı olarak yarışma gereği
 # Kaynakça
 
 [1]https://releases.ubuntu.com/18.04/
+
 [2] https://developer.nvidia.com/drive/sdk-manager
 https://youtu.be/0nplGFQ07po
+
 [3]https://github.com/55selcukozdemir/web_self-car/blob/main/README.md
+
 [4] https://youtu.be/53rRMr1IpWs 
+
 [5] https://youtu.be/oKaLyow7hWU
+
 [6]https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
