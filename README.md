@@ -396,7 +396,7 @@ Python3’ü çalıştırıp kütüphaneyi kontrol ediyoruz.
 
      $python3 
      
-$import pyrealsense2 as rs
+     $ import pyrealsense2 as rs
 
 ![Pyrealsense Python](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/pyrealsense2.png)
 
