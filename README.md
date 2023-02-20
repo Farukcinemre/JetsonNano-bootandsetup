@@ -46,7 +46,7 @@ Bunu seçtiğiniz zaman sizden Jetson Nano’nun yeni kullanıcı adı ve şifre
 
 Yüklemeye devam ederken karşınıza aşağıdaki gibi bir ekran çıkacak (SDK components yükleme ekranı). Bu ekran Jetson Nano’da görüntü işleme, derin öğrenme ile ilgili çalışma yapmak istiyorsanız o çalışmalar için gerekli olan yazılımları  (CUDA, CUDA X-AI, OPENCV vb.) Jetson Nano’ya yüklemenizi sağlıyor. Burada yazılımları Jetson Nano’ya yüklemeniz için iki seçeneğiniz var
 
-![Jetson Nano SDK components yükleme](https://github.com/Farukcinemre/JetsonNano-bootandsetup/raw/main/images/jetson%20nano%20paketleri%20y%C3%BCkleme%20.png)
+![Jetson Nano SDK components yükleme](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/jetson%20nano%20paketleri%20y%C3%BCkleme%20.png)
 
 **1.Seçenek:** İsterseniz resimde de gördüğünüz gibi connection olarak USB’den yükleme yapabilirsiniz. Yani sanal bilgisayar Jetson Nano ile USB üzerinden köprü bağlantı kurup kendi içindeki interneti Jetson Nano’nun da kullanmasını sağlayacak. Eğer USB’den bağlantı yapıp install edecekseniz IP kısmını değiştirmemeniz gerekir.
 
