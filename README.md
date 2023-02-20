@@ -407,3 +407,26 @@ Sonra libcanberra-gtk dosyasını kuruyoruz
 Ve yolov5 için kurulacak olan kütüphaneleri tamamlıyoruz.
 
 **Kamera ile Test**
+
+Yolov5 dosyasının içine giriyoruz.
+
+Terminal açıp gerçek zamanlı test için gereken komutu yazıyoruz ve çalıştırıyoruz.
+
+     $ python detect.py --weights yolov5s.pt --source 0    
+     
+".pt" uzantılı dosyada eğitilen model bulunur. Eğer yolov5'in hazır olarak sunduğu "yolov5s.pt" dosyasını çalıştırırsanız varsayılan olarak eğitilmiş modelleri (insan,bilgisayar,telefon vb.)   test etmiş olursunuz.
+
+Biz Teknofest Tarımsal İnsansız Aracı CORE takımı olarak yarışma gereği olarak yabancı bitki tanıması yapmamız gerekiyor.Bu nedenle ".pt" dosyasında değişiklik yapıp sadece yabancı bitkiyi görmesi ve ilaçlaması gerektiğinden dolayı yabancı bitkiyi eğiterek bitkinin tanımlanmasını sağladık.
+
+![Yabancı Bitki test sonucu](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/yabanci-bitki.jpg)
+
+
+# Kaynakça
+
+[1]https://releases.ubuntu.com/18.04/
+[2] https://developer.nvidia.com/drive/sdk-manager
+https://youtu.be/0nplGFQ07po
+[3]https://github.com/55selcukozdemir/web_self-car/blob/main/README.md
+[4] https://youtu.be/53rRMr1IpWs 
+[5] https://youtu.be/oKaLyow7hWU
+[6]https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
