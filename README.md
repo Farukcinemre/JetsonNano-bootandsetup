@@ -131,11 +131,11 @@ Bu işlemleri yaptıktan sonra SSD formatlanmış oluyor. İşlem bittikten sonr
 
 ![SSD bölümleme](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/disk%20b%C3%B6lme.png)
 
-                                                      Şekil 15
+                                                                       Şekil 15
 
 ![SSD disk format](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/ext4.png)
 
-                                                      Şekil 16
+                                                                       Şekil 16
 
 aşağıdaki Komutu kullanarak SSD diski kontrol edebiliyoruz.
 
@@ -157,13 +157,13 @@ bu komutla birlikte extlinux dosyasının içine giriyoruz(Şekil 17).
 
 ![Extlinux config dosyası](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/extlinuxconfig.png)
 
-                                                       Şekil 17
+                                                                       Şekil 17
 
 Resimdeki işaretlenen bölgeyi kopyalayıp altına yapıştırıyoruz ve yapıştırılan kısımdaki “primary” kısmına sdcard yazıyoruz(Şekil 18).
 
 ![Extlinux sdcard](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/sdcard.png)
 
-                                                       Şekil 18
+                                                                       Şekil 18
 
 SSD’den boot etmek istiyorsak root kısmını değiştirmemiz gerekir.Root kısmına SSD’nin sistem dosyalarının olduğu adresi yazmamız gerekir.
 
@@ -173,13 +173,13 @@ Bu komutu kullanarak SSD’deki sistem dosyalarının adresini bulabiliyoruz(Şe
 
 ![Jetson SSD adres](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/partuuid.png)
 
-                                                       Şekil 19 
+                                                                      Şekil 19 
 
 Buradaki “root=PARTUUID=d75abef0-345f-4f10-b327-5927034572e1” kısmını kopyalıyoruz ve extlinux içerisindeki primary kısmında bulunan root kısmına yapıştırıyoruz(Şekil 20).
 
 ![SSD root](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/root.png)
 
-                                                       Şekil 20
+                                                                      Şekil 20
 
 **Not:** Tırnak içinde belirtilen ifade “root=PARTUUID=d75abef0-345f-4f10-b327-5927034572e1” kısmı özel bir kısımdır bu kısım sizde farklı olacaktır. Buna dikkat etmek gerekir. Yapılacak işlemlerde değişiklik yoktur.
 
@@ -194,7 +194,7 @@ Eğer sizde bulunan Jetson Nano sdcard destekliyse Jetson Nano’yu kapatıyoruz
      
 ![Boot kontrol etme](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/lsblk.png)
 
-                                                       Şekil 21
+                                                                      Şekil 21
 
 Terminali açıp yukardaki kodu yazıyoruz ve Eğer sda1 kısmında part’ın yanındaki kısımda sadece “/” varsa başarıyla boot edilmiş demektir(Şekil 21).
 
@@ -228,7 +228,7 @@ Dosya yüklendikten sonra “buildopencv” dosyasının içine giriyoruz. Orada
 
 ![OPENCV num jobs](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/num_jobs.png)
 
-                                                        Şekil 22
+                                                                      Şekil 22
 
 Bu işlemleri yaptıktan sonra dosyayı kaydedip çıkıyoruz.
 
@@ -324,19 +324,19 @@ Sitenin linki:
 
 ![Torch setup](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/torchvision.png)
 
-                                                              Şekil 23
+                                                                       Şekil 23
 
 Resimde de gördüğünüz gibi Torch’un versiyonları mevcut. Burada  installation kısmına tıkladığınız zaman hangi Torch’un komutlarla adım adım yüklendiğini göstermektedir. Vertification kısmı ise yüklediğimiz Torch ve Torchvision dosyalarını kontrol etmek için kullanılır(Şekil 24).
 
 ![Python3.6 ve torchvision](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/python%20torchvision.png)
 
-                                                              Şekil 24
+                                                                      Şekil 24
 
 Burada installation’a girdiğimizde Torch’u indirmek için kodlar bulunuyor. Biz Python 3.6 için oluşturulan kod dizinini kullanacağız ve  Torch’un 1.10 sürümünü kuracağız.
 
 ![Torch .whl dosyası](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/whl%20dosyas%C4%B1.png)
 
-                                                              Şekil 25
+                                                                      Şekil 25
 
 Resimde de görüldüğü üzere pyhon3.6 için Torch 1.10’u indirmek için “torch-1.10.0-cp36-cp36m-linux_aarch64.whl” dosyasını kullanmamız  gerekir(Şekil 25).
 
@@ -394,7 +394,7 @@ Python kodu ile detect.py dosyasını çalıştırarak /data/images klasöründe
      
 ![Resim test sonucu](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/sonu.png)     
   
-                                                            Şekil 26
+                                                                       Şekil 26
 
 Yolov5 başarılı bir şekilde resimdeki sonuçları vermeyi başardı.Hazır olarak eğitilen yolov5s.pt modeli insanları ve otobüsü doğru bir şekilde tanımladı(Şekil 26).
 
@@ -412,7 +412,7 @@ Sonra klasörün içine giriyoruz
 
 ![Num proc dosyası](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/num_proc.png)
 
-                                                           Şekil 27  
+                                                                       Şekil 27  
   
 Resimde de görülen “$NUM_PROCS” yazısını silip yerine 1 yazıyoruz(Şekil 27).
 
@@ -434,7 +434,7 @@ Eğer hata vermeyip bir alt satıra geçmişse yüklenmiş demektir.
 
 ![Pyrealsense Hata](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/pyrealsense.png)
 
-                                                            Şekil 28
+                                                                       Şekil 28
   
 Eğer resimdeki gibi hata vermişsse(Şekil 28) python’un path’ini değiştirmek gerekir.Python’un realsense kütüphanesinin path’ini bulmak gerekiyor.
 
@@ -444,7 +444,7 @@ Home klasörüne gelip üç çizgiye tıklayıp “show hidden files” seçene�
 
 ![Pyrealsense PATH](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/pythonpath.png)
 
-                                                            Şekil 29
+                                                                      Şekil 29
   
 Resimde de görüldüğü gibi /usr/local/lib olan yeri /usr/local/lib/python3.6/pyrealsense2 olarak değiştirip kaydediyoruz(Şekil 29).
 
@@ -460,8 +460,8 @@ Python3’ü çalıştırıp kütüphaneyi kontrol ediyoruz.
 
 ![Pyrealsense Python](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/pyrealsense2.png)
 
-                                                            Şekil 30  
-  
+                                                                     Şekil 30  
+        
 Eğer bu şekilde alt satıra geçiyorsa işlemi başarıyla tamamlamışsınız demektir(Şekil 30).
 
 Sonra libcanberra-gtk dosyasını kuruyoruz
@@ -484,7 +484,7 @@ Biz Teknofest Tarımsal İnsansız Aracı CORE takımı olarak yarışma gereği
 
 ![Yabancı Bitki test sonucu](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/yabanci-bitki.jpg)
   
-                                                                        Şekil 31
+                                                                     Şekil 31
 
 
 # Kaynakça
