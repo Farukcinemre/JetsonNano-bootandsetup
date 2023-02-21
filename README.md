@@ -1,7 +1,7 @@
 # JetsonNano-bootandsetup
 ## JETSON NANO SIFIRLAMA
 
-Jetson Nano ‘ya sıfırlama yapılması için bilgisayara sanal bilgisayar kuruyoruz ve bu sanal bilgisayara Ubuntu Linux işletim sistemi kuruyoruz. 
+Jetson Nano ‘ya sıfırlama yapılması için bilgisayara sanal bilgisayar kuruyoruz ve bu sanal bilgisayara Ubuntu Linux işletim sistemi kuruyoruz(Şekil 1). 
 
 
 **Not:** Ubuntu 18.04 versiyonu olan işletim sistemi indirilmelidir. Aksi halde başka versiyonlarda çalışmaz. 
@@ -10,11 +10,15 @@ Sanal bilgisayar indirme linki :  [1] https://releases.ubuntu.com/18.04/
 
 ![Ubuntu İSO dosyası ](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/ubuntu%20versiyon%2018.04%20indirme.png)
 
-Ubuntu indirildikten sonra sanal makineye Nvidia SDK Manager indirilmesi gerekir. Aşağıdaki linkten indirin. İndirme yaparken aşağıdaki resimde de görüldüğü gibi “.deb Ubuntu “yazan kısma tıklayıp indirmelisiniz. İndirirken sizden üyelik istiyor üye olun ya da hali hazırda bir üyeliğiniz varsa giriş yapmanız yeterlidir. Eğer üye olmazsanız ya da giriş yapmazsanız uygulamayı yükleyemezsiniz. 
+                                                                    Şekil 1
+
+Ubuntu indirildikten sonra sanal makineye Nvidia SDK Manager indirilmesi gerekir(şekil 2). Aşağıdaki linkten indirin. İndirme yaparken aşağıdaki resimde de görüldüğü gibi “.deb Ubuntu “yazan kısma tıklayıp indirmelisiniz. İndirirken sizden üyelik istiyor üye olun ya da hali hazırda bir üyeliğiniz varsa giriş yapmanız yeterlidir. Eğer üye olmazsanız ya da giriş yapmazsanız uygulamayı yükleyemezsiniz. 
 
   Link:  [2] https://developer.nvidia.com/drive/sdk-manager
   
   ![Nvidia SDK Manager indirme](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/nvidia%20jetson%20nano%20indirme.png)
+  
+                                                                    Şekil 2
   
 Daha sonra Ubuntu Linux’ta yükleme yapabilmek için dosyanın indirildiği yere gelip terminal açıyoruz.
 
@@ -26,13 +30,17 @@ Bu kodu çalıştırıyoruz. Eğer yüklemede hata veriyorsa
           
 Bu kodu çalıştırıyoruz. Bunu yaptıktan sonra tekrar “$ sudo dpkg -i nvidiasdkmanager.deb “kodunu tekrar denediğinizde çalışacaktır.
 
-Daha sonra Nvidia SDK Manager uygulamasını açıyoruz Aşağıdaki resimdeki gibi bir ekran geliyor. “ logging in “ kısmından tekrar giriş yaptıktan sonra uygulama arayüzü açılıyor. 
+Daha sonra Nvidia SDK Manager uygulamasını açıyoruz Aşağıdaki resimdeki gibi bir ekran geliyor. “ logging in “ kısmından tekrar giriş yaptıktan sonra (Şekil 3)uygulama arayüzü açılıyor. 
 
 ![Nvidia SDK Manager login ekranı](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/nvidia%20log%20in%20ekran%C4%B1.png)
 
-Aşağıdaki ekrandaki gibi arayüz ekranı geliyor. Burada “Target Hardware” başlıklı kısımı seçip oradan elimizdeki Jetson Nano modeli ne ise onu seçmek gerekir.
+                                                                    Şekil 3
+
+Aşağıdaki ekrandaki gibi arayüz ekranı geliyor. Burada “Target Hardware” başlıklı kısımı seçip oradan elimizdeki Jetson Nano modeli ne ise onu seçmek gerekir(Şekil 4).
 
 ![Jetson Nano Model seçim ekranı](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/jetson%20nano%20modelleri%20se%C3%A7im%20ekran%C4%B1%20.png)
+
+                                                                    Şekil 4
 
 Jetson Nanoyu seçtiğimizde “ADDITIONAL SDKS” kısmında sadece DeepStream deki tik işaretine basıp işaretliyoruz ve 2.adıma geçiyoruz.
 
