@@ -46,15 +46,21 @@ Jetson Nanoyu seçtiğimizde “ADDITIONAL SDKS” kısmında sadece DeepStream 
 
 ![Nvidia SDK 2.adım ](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/download%20ve%20install%20ekran%C4%B1.png)
 
-2.Adıma geçtiğimizde ise yükleme yapmadan önce bizden privacy policy kabul etmemizi söylüyor. Ve onun yanındaki “Download now. İnstall later“ Seçeneğine tıklarsanız Nvidia Jetson Nano için gerekli olan dosyaları indirir yüklemeyi kendiniz indirdikten sonra yaparsınız eğer o seçeneği işaretlemeden ilerlerseniz direkt download ve install’u yapar(Bu işlem uzun sürebilir). Download ve install devam ederken  aşağıdaki karşımıza resimdeki ekran geliyor. Oradaki “ Automatic Setup -Jetson nano” seçeneği işaretli olacak ekranda görüldüğü üzere “Manual Setup” seçeneğini seçmelisiniz.	 
+                                                                    Şekil 5
+
+2.Adıma geçtiğimizde ise yükleme yapmadan önce bizden privacy policy kabul etmemizi söylüyor. Ve onun yanındaki “Download now. İnstall later“ Seçeneğine tıklarsanız Nvidia Jetson Nano için gerekli olan dosyaları indirir yüklemeyi kendiniz indirdikten sonra yaparsınız eğer o seçeneği işaretlemeden ilerlerseniz direkt download ve install’u yapar(Bu işlem uzun sürebilir)(Şekil 5). Download ve install devam ederken  aşağıdaki karşımıza resimdeki ekran geliyor. Oradaki “ Automatic Setup -Jetson nano” seçeneği işaretli olacak ekranda görüldüğü üzere “Manual Setup” seçeneğini seçmelisiniz(Şekil 6).	 
 
 ![Manuel Setup Ekrani](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/manuel%20setup%20jetson%20nano.png)
 
+                                                                    Şekil 6
+
 Bunu seçtiğiniz zaman sizden Jetson Nano’nun yeni kullanıcı adı ve şifresini girmenizi isteyecektir. Bunları girdikten sonra finish e tıklayın. Download ve install işlemi devam edecektir.
 
-Yüklemeye devam ederken karşınıza aşağıdaki gibi bir ekran çıkacak (SDK components yükleme ekranı). Bu ekran Jetson Nano’da görüntü işleme, derin öğrenme ile ilgili çalışma yapmak istiyorsanız o çalışmalar için gerekli olan yazılımları  (CUDA, CUDA X-AI, OPENCV vb.) Jetson Nano’ya yüklemenizi sağlıyor. Burada yazılımları Jetson Nano’ya yüklemeniz için iki seçeneğiniz var
+Yüklemeye devam ederken karşınıza aşağıdaki gibi bir ekran çıkacak (SDK components yükleme ekranı)(Şekil 7). Bu ekran Jetson Nano’da görüntü işleme, derin öğrenme ile ilgili çalışma yapmak istiyorsanız o çalışmalar için gerekli olan yazılımları  (CUDA, CUDA X-AI, OPENCV vb.) Jetson Nano’ya yüklemenizi sağlıyor. Burada yazılımları Jetson Nano’ya yüklemeniz için iki seçeneğiniz var
 
 ![Jetson Nano SDK components yükleme](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/jetson%20nano%20paketleri%20y%C3%BCkleme%20.png)
+
+                                                                     Şekil 7
 
 **1.Seçenek:** İsterseniz resimde de gördüğünüz gibi connection olarak USB’den yükleme yapabilirsiniz. Yani sanal bilgisayar Jetson Nano ile USB üzerinden köprü bağlantı kurup kendi içindeki interneti Jetson Nano’nun da kullanmasını sağlayacak. Eğer USB’den bağlantı yapıp install edecekseniz IP kısmını değiştirmemeniz gerekir.
 
@@ -72,7 +78,9 @@ Linkte derin öğrenme için gerekli kütüphaneleri adım adım nasıl yükleme
 
 ![Jetson Nano Modelleri](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/jetson%20nano%20modelleri.png)
 
-Yukarıdaki resimde de görüldüğü gibi Jetson Nano’nun 3 modeli vardır ve bu modeller Jetson Nano, Jetson Nano (developer kit), Jetson Nano (2 gb developer kit version) 
+                                                                      Şekil 8 
+
+Yukarıdaki resimde de görüldüğü gibi(Şekil 8) Jetson Nano’nun 3 modeli vardır ve bu modeller Jetson Nano, Jetson Nano (developer kit), Jetson Nano (2 gb developer kit version) 
 
 Jetson Nano’nun sdcard destekli modeline sahipseniz 64GB hafızaya sahip bir sdcard bağlarsanız derin öğrenme için gerekli kütüphaneleri yüklemek için yeterli alanınız olmuş olur.
 
@@ -91,31 +99,49 @@ Daha sonra yüklediğimiz github klasörüne giriş yapıyoruz
      
 ![Jetson Nano diskler](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/diskler.png)
 
-Jetson Nano’yu boot edileceğinden SSD ‘nin formatlanması gerekir. Resimde gördüğünüz gibi arama kısmına “disks” yazıp ilk çıkana tıklıyoruz.
+                                                                       Şekil 9
+
+Jetson Nano’yu boot edileceğinden SSD ‘nin formatlanması gerekir(Şekil 9). Resimde gördüğünüz gibi arama kısmına “disks” yazıp ilk çıkana tıklıyoruz(Şekil 10).
 
 ![Jetson Nano SSD ](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/ssd.png)
 
-esimdeki gibi SSD’yi seçip sağ üstteki 3 çizgi olan kutucuğu seçiyoruz. Format disk’e tıklıyoruz ve Partitioning kısmını GPT olan kısım ile değiştiriyoruz. Daha sonra format a tıklıyoruz ve tekrar formata tıklıyoruz.
+                                                                       Şekil 10
+
+esimdeki gibi SSD’yi seçip sağ üstteki 3 çizgi olan kutucuğu seçiyoruz. Format disk’e tıklıyoruz (Şekil 11) ve Partitioning kısmını GPT olan kısım ile değiştiriyoruz (Şekil 12). Daha sonra format a tıklıyoruz ve tekrar formata tıklıyoruz(Şekil 13).
 
 ![Jetson Nano format disk](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/format.png)
 
+                                                                       Şekil 11
+
 ![Jetson Nano format GPT](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/GPT.png)
+
+                                                                       Şekil 12
 
 ![Jetson Nano format onay](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/areyousure.png)
 
-Bu işlemleri yaptıktan sonra SSD formatlanmış oluyor. İşlem bittikten sonra resimdeki gibi “+” kısmına basıp disk bölümü yapıyoruz.
+                                                                       Şekil 13
+
+Bu işlemleri yaptıktan sonra SSD formatlanmış oluyor. İşlem bittikten sonra resimdeki gibi “+” kısmına basıp disk bölümü yapıyoruz(Şekil 14).
 
 ![SSD disk bölme](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/%2Bssd.jpg)
 
-Daha sonra SSD diskine isim veriyoruz. Burada “Type” kısmında “Internal disk for use with Linux systems only (Ext4)” bu seçeneği işaretliyoruz. Sonra “Create” e tıklayarak ilerliyoruz ve SSD diskin bölümlenmesini yapılmış oluyor.
+                                                                       Şekil 14
+
+"+" kısmına tıkladıktan sonra SSD yi bölüyoruz(Şekil 15).Daha sonra SSD diskine isim veriyoruz. Burada “Type” kısmında “Internal disk for use with Linux systems only (Ext4)” bu seçeneği işaretliyoruz. Sonra “Create” e tıklayarak ilerliyoruz ve SSD diskin bölümlenmesini yapılmış oluyor(Şekil 16).
 
 ![SSD bölümleme](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/disk%20b%C3%B6lme.png)
 
+                                                      Şekil 15
+
 ![SSD disk format](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/ext4.png)
+
+                                                      Şekil 16
+
+aşağıdaki Komutu kullanarak SSD diski kontrol edebiliyoruz.
 
      $ ls /dev/sda* 
 
-Komutunu kullanarak SSD diski kontrol edebiliyoruz.
+SSD diski boot edebilmemiz için diske sistem dosyalarının yüklenmesi gerekir.Bilgisayarda  flash ile boot etmek gibi düşünebilirsiniz. 
 
      $ ./copyRootToUSB.sh -p /dev/sda1 
                 
@@ -127,25 +153,33 @@ Burada extlinux dosyalarını kopyalıyoruz.
 
      $ sudo gedit extlinux.conf 
      
-bu komutla birlikte extlinux dosyasının içine giriyoruz.
+bu komutla birlikte extlinux dosyasının içine giriyoruz(Şekil 17).
 
 ![Extlinux config dosyası](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/extlinuxconfig.png)
 
-Resimdeki işaretlenen bölgeyi kopyalayıp altına yapıştırıyoruz ve yapıştırılan kısımdaki “primary” kısmına sdcard yazıyoruz.
+                                                       Şekil 17
+
+Resimdeki işaretlenen bölgeyi kopyalayıp altına yapıştırıyoruz ve yapıştırılan kısımdaki “primary” kısmına sdcard yazıyoruz(Şekil 18).
 
 ![Extlinux sdcard](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/sdcard.png)
+
+                                                       Şekil 18
 
 SSD’den boot etmek istiyorsak root kısmını değiştirmemiz gerekir.Root kısmına SSD’nin sistem dosyalarının olduğu adresi yazmamız gerekir.
 
      $ ./partUUID.sh 
      
-Bu komutu kullanarak SSD’deki sistem dosyalarının adresini bulabiliyoruz.
+Bu komutu kullanarak SSD’deki sistem dosyalarının adresini bulabiliyoruz(Şekil 19).
 
 ![Jetson SSD adres](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/partuuid.png)
 
-Buradaki “root=PARTUUID=d75abef0-345f-4f10-b327-5927034572e1” kısmını kopyalıyoruz ve extlinux içerisindeki primary kısmında bulunan root kısmına yapıştırıyoruz.
+                                                       Şekil 19 
+
+Buradaki “root=PARTUUID=d75abef0-345f-4f10-b327-5927034572e1” kısmını kopyalıyoruz ve extlinux içerisindeki primary kısmında bulunan root kısmına yapıştırıyoruz(Şekil 20).
 
 ![SSD root](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/root.png)
+
+                                                       Şekil 20
 
 **Not:** Tırnak içinde belirtilen ifade “root=PARTUUID=d75abef0-345f-4f10-b327-5927034572e1” kısmı özel bir kısımdır bu kısım sizde farklı olacaktır. Buna dikkat etmek gerekir. Yapılacak işlemlerde değişiklik yoktur.
 
@@ -160,7 +194,9 @@ Eğer sizde bulunan Jetson Nano sdcard destekliyse Jetson Nano’yu kapatıyoruz
      
 ![Boot kontrol etme](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/lsblk.png)
 
-Terminali açıp yukardaki kodu yazıyoruz ve Eğer sda1 kısmında part’ın yanındaki kısımda sadece “/” varsa başarıyla boot edilmiş demektir.
+                                                       Şekil 21
+
+Terminali açıp yukardaki kodu yazıyoruz ve Eğer sda1 kısmında part’ın yanındaki kısımda sadece “/” varsa başarıyla boot edilmiş demektir(Şekil 21).
 
  **2.Jetson Nano sdcard destekli değilse**
  
@@ -188,9 +224,11 @@ Opencv dosyalarını kopyalıyoruz
 
      $git clone https://github.com/JetsonHacksNano/buildOpenCV.git
      
-Dosya yüklendikten sonra “buildopencv” dosyasının içine giriyoruz. Orada bulunan  “$NUM_JOBS” kısmını 1 yaparak değiştiriyoruz(eğer Jetson Nano modeliniz sd card destekliyse değiştirme yapmayın)
+Dosya yüklendikten sonra “buildopencv” dosyasının içine giriyoruz. Orada bulunan  “$NUM_JOBS” kısmını 1 yaparak değiştiriyoruz(eğer Jetson Nano modeliniz sd card destekliyse değiştirme yapmayın)(Şekil 22)
 
 ![OPENCV num jobs](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/num_jobs.png)
+
+                                                        Şekil 22
 
 Bu işlemleri yaptıktan sonra dosyayı kaydedip çıkıyoruz.
 
@@ -278,7 +316,7 @@ Typing-extensions kuruyoruz.
      
 **3.Adım: Torch kütüphanesini yükleme**
 
-Jetson Nano’nun ARM tabanlı işlemci mimarisinden olduğundan dolayı windowstaki gibi torch’un sitesine girip yükleme söz konusu değildir. Daha farklıdır. Torch yüklerken bir de Torchvision yüklememiz gerekir.
+Jetson Nano’nun ARM tabanlı işlemci mimarisinden olduğundan dolayı windowstaki gibi torch’un sitesine girip yükleme söz konusu değildir. Daha farklıdır. Torch yüklerken bir de Torchvision yüklememiz gerekir(Şekil 23).
 
 Nvidia’nın forum sitesinde Torch kütüphanesini nasıl yükleyeceğinize dair 
 Sitenin linki:
@@ -286,15 +324,21 @@ Sitenin linki:
 
 ![Torch setup](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/torchvision.png)
 
-Resimde de gördüğünüz gibi Torch’un versiyonları mevcut. Burada  installation kısmına tıkladığınız zaman hangi Torch’un komutlarla adım adım yüklendiğini göstermektedir. Vertification kısmı ise yüklediğimiz Torch ve Torchvision dosyalarını kontrol etmek için kullanılır.
+                                                              Şekil 23
+
+Resimde de gördüğünüz gibi Torch’un versiyonları mevcut. Burada  installation kısmına tıkladığınız zaman hangi Torch’un komutlarla adım adım yüklendiğini göstermektedir. Vertification kısmı ise yüklediğimiz Torch ve Torchvision dosyalarını kontrol etmek için kullanılır(Şekil 24).
 
 ![Python3.6 ve torchvision](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/python%20torchvision.png)
+
+                                                              Şekil 24
 
 Burada installation’a girdiğimizde Torch’u indirmek için kodlar bulunuyor. Biz Python 3.6 için oluşturulan kod dizinini kullanacağız ve  Torch’un 1.10 sürümünü kuracağız.
 
 ![Torch .whl dosyası](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/whl%20dosyas%C4%B1.png)
 
-Resimde de görüldüğü üzere pyhon3.6 için Torch 1.10’u indirmek için “torch-1.10.0-cp36-cp36m-linux_aarch64.whl” dosyasını kullanmamız  gerekir.
+                                                              Şekil 25
+
+Resimde de görüldüğü üzere pyhon3.6 için Torch 1.10’u indirmek için “torch-1.10.0-cp36-cp36m-linux_aarch64.whl” dosyasını kullanmamız  gerekir(Şekil 25).
 
 Terminale girip aşağıdaki kodu çalıştırıyoruz.
 
@@ -349,8 +393,10 @@ Python kodu ile detect.py dosyasını çalıştırarak /data/images klasöründe
      $python3 detect.py --source  data/images --weights yolov5s.pt 
      
 ![Resim test sonucu](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/sonu.png)     
+  
+                                                            Şekil 26
 
-Yolov5 başarılı bir şekilde resimdeki sonuçları vermeyi başardı.Hazır olarak eğitilen yolov5s.pt modeli insanları ve otobüsü doğru bir şekilde tanımladı.
+Yolov5 başarılı bir şekilde resimdeki sonuçları vermeyi başardı.Hazır olarak eğitilen yolov5s.pt modeli insanları ve otobüsü doğru bir şekilde tanımladı(Şekil 26).
 
 Jetson Nano’da gerçek zamanlı görüntü işleme yapmak için realsense kütüphanesini yüklememiz gerekir.
 
@@ -366,7 +412,9 @@ Sonra klasörün içine giriyoruz
 
 ![Num proc dosyası](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/num_proc.png)
 
-Resimde de görülen “$NUM_PROCS” yazısını silip yerine 1 yazıyoruz
+                                                           Şekil 27  
+  
+Resimde de görülen “$NUM_PROCS” yazısını silip yerine 1 yazıyoruz(Şekil 27).
 
 Daha sonra buildLibRealsense dosyasını çalıştırıyoruz
 
@@ -386,7 +434,9 @@ Eğer hata vermeyip bir alt satıra geçmişse yüklenmiş demektir.
 
 ![Pyrealsense Hata](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/pyrealsense.png)
 
-Eğer resimdeki gibi hata vermişsse python’un path’ini değiştirmek gerekir.Python’un realsense kütüphanesinin path’ini bulmak gerekiyor.
+                                                            Şekil 28
+  
+Eğer resimdeki gibi hata vermişsse(Şekil 28) python’un path’ini değiştirmek gerekir.Python’un realsense kütüphanesinin path’ini bulmak gerekiyor.
 
 Pyrealsense2 kütüphanesi /usr/local/lib/python3.6/pyrealsense2 klasöründe bulunuyor.
 
@@ -394,7 +444,9 @@ Home klasörüne gelip üç çizgiye tıklayıp “show hidden files” seçene�
 
 ![Pyrealsense PATH](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/pythonpath.png)
 
-Resimde de görüldüğü gibi /usr/local/lib olan yeri /usr/local/lib/python3.6/pyrealsense2 olarak değiştirip kaydediyoruz.
+                                                            Şekil 29
+  
+Resimde de görüldüğü gibi /usr/local/lib olan yeri /usr/local/lib/python3.6/pyrealsense2 olarak değiştirip kaydediyoruz(Şekil 29).
 
 Aşağıdaki komutu kullanıyoruz.
 
@@ -408,7 +460,9 @@ Python3’ü çalıştırıp kütüphaneyi kontrol ediyoruz.
 
 ![Pyrealsense Python](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/pyrealsense2.png)
 
-Eğer bu şekilde alt satıra geçiyorsa işlemi başarıyla tamamlamışsınız demektir.
+                                                            Şekil 30  
+  
+Eğer bu şekilde alt satıra geçiyorsa işlemi başarıyla tamamlamışsınız demektir(Şekil 30).
 
 Sonra libcanberra-gtk dosyasını kuruyoruz
 
@@ -426,9 +480,11 @@ Terminal açıp gerçek zamanlı test için gereken komutu yazıyoruz ve çalı�
      
 ".pt" uzantılı dosyada eğitilen model bulunur. Eğer yolov5'in hazır olarak sunduğu "yolov5s.pt" dosyasını çalıştırırsanız varsayılan olarak eğitilmiş modelleri (insan,bilgisayar,telefon vb.)   test etmiş olursunuz.
 
-Biz Teknofest Tarımsal İnsansız Aracı CORE takımı olarak yarışma gereği olarak yabancı bitki tanıması yapmamız gerekiyor.Bu nedenle ".pt" dosyasında değişiklik yapıp sadece yabancı bitkiyi görmesi ve ilaçlaması gerektiğinden dolayı yabancı bitkiyi eğiterek bitkinin tanımlanmasını sağladık.
+Biz Teknofest Tarımsal İnsansız Aracı CORE takımı olarak yarışma gereği olarak yabancı bitki tanıması yapmamız gerekiyor.Bu nedenle ".pt" dosyasında değişiklik yapıp sadece yabancı bitkiyi görmesi ve ilaçlaması gerektiğinden dolayı yabancı bitkiyi eğiterek bitkinin tanımlanmasını sağladık(Şekil 31).
 
 ![Yabancı Bitki test sonucu](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/yabanci-bitki.jpg)
+  
+                                                                        Şekil 31
 
 
 # Kaynakça
