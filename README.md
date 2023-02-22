@@ -10,7 +10,7 @@ Sanal bilgisayar indirme linki :  [1] https://releases.ubuntu.com/18.04/
 
 ![Ubuntu İSO dosyası ](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/ubuntu%20versiyon%2018.04%20indirme.png)
 
-                                                                    Şekil 1
+                                                              Şekil 1
 
 Ubuntu indirildikten sonra sanal makineye Nvidia SDK Manager indirilmesi gerekir(şekil 2). Aşağıdaki linkten indirin. İndirme yaparken aşağıdaki resimde de görüldüğü gibi “.deb Ubuntu “yazan kısma tıklayıp indirmelisiniz. İndirirken sizden üyelik istiyor üye olun ya da hali hazırda bir üyeliğiniz varsa giriş yapmanız yeterlidir. Eğer üye olmazsanız ya da giriş yapmazsanız uygulamayı yükleyemezsiniz. 
 
@@ -18,7 +18,7 @@ Ubuntu indirildikten sonra sanal makineye Nvidia SDK Manager indirilmesi gerekir
   
   ![Nvidia SDK Manager indirme](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/nvidia%20jetson%20nano%20indirme.png)
   
-                                                                    Şekil 2
+                                                              Şekil 2
   
 Daha sonra Ubuntu Linux’ta yükleme yapabilmek için dosyanın indirildiği yere gelip terminal açıyoruz.
 
@@ -34,25 +34,25 @@ Daha sonra Nvidia SDK Manager uygulamasını açıyoruz Aşağıdaki resimdeki g
 
 ![Nvidia SDK Manager login ekranı](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/nvidia%20log%20in%20ekran%C4%B1.png)
 
-                                                                    Şekil 3
+                                                               Şekil 3
 
 Aşağıdaki ekrandaki gibi arayüz ekranı geliyor. Burada “Target Hardware” başlıklı kısımı seçip oradan elimizdeki Jetson Nano modeli ne ise onu seçmek gerekir(Şekil 4).
 
 ![Jetson Nano Model seçim ekranı](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/jetson%20nano%20modelleri%20se%C3%A7im%20ekran%C4%B1%20.png)
 
-                                                                    Şekil 4
+                                                               Şekil 4
 
 Jetson Nanoyu seçtiğimizde “ADDITIONAL SDKS” kısmında sadece DeepStream deki tik işaretine basıp işaretliyoruz ve 2.adıma geçiyoruz.
 
 ![Nvidia SDK 2.adım ](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/download%20ve%20install%20ekran%C4%B1.png)
 
-                                                                    Şekil 5
+                                                               Şekil 5
 
 2.Adıma geçtiğimizde ise yükleme yapmadan önce bizden privacy policy kabul etmemizi söylüyor. Ve onun yanındaki “Download now. İnstall later“ Seçeneğine tıklarsanız Nvidia Jetson Nano için gerekli olan dosyaları indirir yüklemeyi kendiniz indirdikten sonra yaparsınız eğer o seçeneği işaretlemeden ilerlerseniz direkt download ve install’u yapar(Bu işlem uzun sürebilir)(Şekil 5). Download ve install devam ederken  aşağıdaki karşımıza resimdeki ekran geliyor. Oradaki “ Automatic Setup -Jetson nano” seçeneği işaretli olacak ekranda görüldüğü üzere “Manual Setup” seçeneğini seçmelisiniz(Şekil 6).	 
 
 ![Manuel Setup Ekrani](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/manuel%20setup%20jetson%20nano.png)
 
-                                                                    Şekil 6
+                                                                Şekil 6
 
 Bunu seçtiğiniz zaman sizden Jetson Nano’nun yeni kullanıcı adı ve şifresini girmenizi isteyecektir. Bunları girdikten sonra finish e tıklayın. Download ve install işlemi devam edecektir.
 
@@ -60,7 +60,7 @@ Yüklemeye devam ederken karşınıza aşağıdaki gibi bir ekran çıkacak (SDK
 
 ![Jetson Nano SDK components yükleme](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/jetson%20nano%20paketleri%20y%C3%BCkleme%20.png)
 
-                                                                     Şekil 7
+                                                                 Şekil 7
 
 **1.Seçenek:** İsterseniz resimde de gördüğünüz gibi connection olarak USB’den yükleme yapabilirsiniz. Yani sanal bilgisayar Jetson Nano ile USB üzerinden köprü bağlantı kurup kendi içindeki interneti Jetson Nano’nun da kullanmasını sağlayacak. Eğer USB’den bağlantı yapıp install edecekseniz IP kısmını değiştirmemeniz gerekir.
 
@@ -78,7 +78,7 @@ Linkte derin öğrenme için gerekli kütüphaneleri adım adım nasıl yükleme
 
 ![Jetson Nano Modelleri](https://github.com/Farukcinemre/JetsonNano-bootandsetup/blob/main/images/jetson%20nano%20modelleri.png)
 
-                                                                      Şekil 8 
+                                                                   Şekil 8 
 
 Yukarıdaki resimde de görüldüğü gibi(Şekil 8) Jetson Nano’nun 3 modeli vardır ve bu modeller Jetson Nano, Jetson Nano (developer kit), Jetson Nano (2 gb developer kit version) 
 
